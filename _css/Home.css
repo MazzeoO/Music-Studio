@@ -1,0 +1,335 @@
+html, body {
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fontes */
+@font-face {
+  font-family: 'Inter';
+  src: url('../_fonts/Inter.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rounded';
+  src: url('../_fonts/Rounded.otf') format('truetype');
+}
+
+/* corpo */
+body {
+  font-family: 'Inter';
+  font-size: 1.2vw;
+  margin: 0;
+  padding: 0;
+}
+
+p, h2 {
+  color: white;
+}
+
+/* Cabeçaho */
+header {
+    background-color: #2B2B2B;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#logo {
+    height: 80%;
+}
+
+nav#menu {
+  display: block;
+}
+
+nav#menu ul {
+  display: flex; /* tive que colocar outro display flex pq o gap n estava funcionando*/
+  list-style: none;
+  text-transform: uppercase;
+  top: 0px;
+  left: 300px;
+  gap: 35px;
+}
+nav#menu li {
+  display: inline-block;
+
+  padding: 10px ;
+  cursor: pointer;
+}
+
+nav#menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav#menu li:hover {
+  background-color: rgba(255, 255, 255, 0.247);
+  border-radius: 20px;
+}
+
+/* Fundo (imagem)*/
+
+div#fundo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+div#fundo img{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+div#overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+div#itens {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  
+  color: white;
+  font-size: 3vw;
+  gap: 4vh;
+  
+  z-index: 2;
+}
+
+div#itens h2 {
+  position: relative;
+  bottom: 100px;
+  left: 20px;
+  font-family: 'Rounded';
+  font-size: 4vw;
+  margin-bottom: 100px;
+}
+
+div.botoes{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 3.5vw;
+  bottom: 100px;
+}
+
+div.botoes a {
+  text-decoration: none;
+  color: white;
+}
+
+div#contato #cont {
+  height: 50px;
+  width: 150px;
+  background-color: #0000004d;
+  border: 1px solid white;
+  font-size: 18pt;
+  max-width: 100%;
+}
+
+div#loca #local {
+  height: 50px;
+  width: 150px;
+  background-color: #0000004d;
+  border: 1px solid white;
+  font-size: 18pt;
+}
+
+/* Sobre nos (resumo) */
+main { /* me desculpa, mas só fui lembrar q existia essa opção quando ja estava no rodapé */
+  background-color: #2B2B2B;
+}
+
+div#fundo2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+div#texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#pr { /* Paragrafo*/
+  font-size: 1.5vw;
+  width: 900px;
+}
+
+#fm { /* Frase motivacional*/
+  font-size: 1vw;
+  width: 750px;
+}
+
+/* Fotos e Videos */
+div#fev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#fev img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div#tb2 {
+  z-index: 1;
+  position: absolute;
+
+  font-size: 3vw;
+  font-family: 'Rounded';
+}
+
+div#tb2 h2 {
+  position: relative;
+  bottom: 12px;
+}
+
+div#tb2 #bft {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+div#tb2 #btft {
+  height: 4vw;
+  width: 18vw;
+  color: white;
+  background-color: #0000004d;
+  border: 1px solid white;
+  font-size: 3vw;
+
+  min-width: 10%;
+  max-width: 100%;
+}
+
+div#tb2 #btft a {
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+}
+
+/* Parceiros */
+div#parceiros {
+  height: auto;
+  width: 100%;
+}
+
+div#parceiros h2 {
+  position: relative;
+  text-align: center;
+  font-family: 'Rounded';
+  font-size: 3vw;
+  top: 3vw;
+  margin-bottom: 5vw;
+}
+
+div#parcerias {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  gap: 10vw;
+}
+
+.circulo {
+      width: 25vh;
+      height: 25vh;
+      background-color: #1f6797;
+      border-radius: 100%;
+}
+
+.circulo img {
+  border-radius: 100%;
+}
+
+#par1, #par2, #par3 {
+  font-size: 2vw;
+}
+
+/* Rodapé */
+footer {
+  background-color: #101010;
+  margin-top: -1.5vw; /* isso foi um baita arranjo técnico, resumindo: tinha um espaço grande branco entre o footer e o hr, então fiz isso.*/
+}
+
+div#icons {
+  color: #ffffff;
+  font-size: 3vw;
+
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+div#icons #ic {
+  margin-top: 4vw;
+  margin-bottom: 1vw;
+}
+
+nav#mrdp {
+  display: block;
+}
+
+nav#mrdp ul {
+  display: flex; /* tive que colocar outro display flex pq o gap n estava funcionando*/
+  list-style: none;
+  text-transform: uppercase;
+  gap: 35px;
+
+  justify-content: center;
+}
+nav#mrdp li {
+  display: inline-block;
+
+  padding: 10px ;
+  cursor: pointer;
+}
+
+nav#mrdp a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav#mrdp li:hover {
+  background-color: rgba(255, 255, 255, 0.247);
+  border-radius: 20px;
+}
+
+/* copyright */
+div#cr {
+  background-color: black;
+  width: 100%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+}

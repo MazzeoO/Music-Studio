@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../_fonts/Inter.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rounded';
+  src: url('../_fonts/Rounded.otf') format('truetype');
+}
+
+/* corpo */
+body {
+  font-family: 'Inter';
+  font-size: 1.2vw;
+  margin: 0;
+  padding: 0;
+  background-color: #2B2B2B;
+}
+
+p, h2, label {
+  color: white;
+  font-family: 'Inter';
+}
+
+h2 {
+  font-family: 'Rounded';
+}
+
+input, select, textarea {
+  background-color: #414141;
+  color: white;
+}
+
+/* Cabeçaho */
+header {
+    background-color: #2B2B2B;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#logo {
+    height: 80%;
+}
+
+nav#menu {
+  display: block;
+}
+
+nav#menu ul {
+  display: flex; /* tive que colocar outro display flex pq o gap n estava funcionando*/
+  list-style: none;
+  text-transform: uppercase;
+  top: 0px;
+  left: 300px;
+  gap: 35px;
+}
+nav#menu li {
+  display: inline-block;
+
+  padding: 10px ;
+  cursor: pointer;
+}
+
+nav#menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav#menu li:hover {
+  background-color: rgba(255, 255, 255, 0.247);
+  border-radius: 20px;
+}
+
+/* Main */
+h2#tt {
+  font-size: 2vw;
+  font-family: 'Rounded';
+  text-align: center;;
+}
+
+div#base {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+fieldset {
+    width: 60vw;
+    border-radius: .7vw;
+    padding: 1vw;
+}
+
+/* rodapé */
+footer {
+    background-color: #101010;
+    margin-top: -1.5vw; /* isso foi um baita arranjo técnico, resumindo: tinha um espaço grande branco entre o footer e o hr, então fiz isso.*/
+  }
+  
+  div#icons {
+    color: #ffffff;
+    font-size: 3vw;
+  
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  div#icons #ic {
+    margin-top: 4vw;
+    margin-bottom: 1vw;
+  }
+  
+  nav#mrdp {
+    display: block;
+  }
+  
+  nav#mrdp ul {
+    display: flex; /* tive que colocar outro display flex pq o gap n estava funcionando*/
+    list-style: none;
+    text-transform: uppercase;
+    gap: 35px;
+  
+    justify-content: center;
+  }
+  nav#mrdp li {
+    display: inline-block;
+  
+    padding: 10px ;
+    cursor: pointer;
+  }
+  
+  nav#mrdp a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  nav#mrdp li:hover {
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 20px;
+  }
+  
+  /* copyright */
+  div#cr {
+    background-color: black;
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+  }
